@@ -82,7 +82,7 @@ Both results are compared based in the quantity of movements, and the most effic
   case2(x;y): (0;14), (14;0), (14;14), (21;7) ---> Solved in 4 movements. Worst Solution.
 
 4.- x=88 y=56 z=3 <br>
-  Not solvable due to the GCD of 88 and 56 equals 8, remenbering the condition of the algorithm (Z % GCD(X, Y) = 0), and 3%8 = 3 which is different that 0, there is no possible solution. 3 % GCD(88, 56) !== 0.
+  Not solvable due to the GCD of 88 and 56 equals 8, remenbering the condition of the algorithm (Z % GCD(X, Y) = 0), and 3%8 = 3 which is different that 0, there is no possible solution. 3 % GCD(88, 56) != 0.
 <br>
 
 ---
