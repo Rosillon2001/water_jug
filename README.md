@@ -68,7 +68,7 @@ There is always solution if the GCD (great common divisor) of X and Y divides Z,
 
 Both results are compared based in the quantity of movements, and the most efficient approach is returned and displayed.
 
-# Test Cases
+## Test Cases
 1.- x=5 y=3 z=2 <br>
   case1(x;y): (5;0), (2;3) ----> Solved in 2 movements. Best Solution, using x as pivot/first to fill.
   case2(x;y): (0;3), (3;0), (3;3), (5;1), (0;1), (1;0), (1;3), (4;0), (4;3), (5;2) ----> Solved in 10 movements. Worst solution, using y as pivot/first to fill.
