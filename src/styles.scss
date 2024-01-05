@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Tektur;
+  src: url(./assets/fonts/Tektur-VariableFont.ttf)
+}
+
+* {
+  font-family: Tektur;
+  background-color: aliceblue;
+}

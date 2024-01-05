@@ -1,0 +1,69 @@
+<div class="form-container">
+  <form [formGroup]="form" class="form">
+    <!-- Jug X -->
+    <div class="input-container">
+      <img class="water-jug" src="../assets/icons/water-jugX.png" alt="logo" aria-hidden="true">
+      <div class="jug-input">
+        <label for="jugX">Jug X</label>
+        <input type="number" formControlName="jugX" name="jugX" placeholder="Jug X" min="1" oninput="validity.valid||(value=1);"/>
+        <!-- validity.valid||(value=''); This examinates the inpur value, and if it does not match with the 'min' attr and
+          input type number, it returns 1 by default -->
+        <!-- This works as an input validator, no symbols, letters or negative numbers allowed -->
+      </div>
+    </div>
+    <!-- Jug Y -->
+    <div class="input-container">
+      <img class="water-jug" src="../assets/icons/water-jugY.png" alt="logo" aria-hidden="true">
+      <div class="jug-input">
+        <label for="jugY">Jug Y</label>
+        <input type="number" formControlName="jugY" name="jugY" placeholder="Jug Y" min="1" oninput="validity.valid||(value=1);"/>
+      </div>
+    </div>
+    <!-- Target Z -->
+    <div class="input-container">
+      <img class="water-jug" src="../assets/icons/question.png" alt="logo" aria-hidden="true">
+      <div class="jug-input">
+        <label for="targetZ">Target Z</label>
+        <input type="number" formControlName="targetZ" name="targetZ" placeholder="Target Z" min="1" oninput="validity.valid||(value=1);"/>
+      </div>
+    </div>
+    <!-- Calculate Button -->
+    <button type="button" (click)="calculate()" [disabled]="!validateForm()">Calculate</button>
+  </form>
+</div>
+<div>
+  <h2>Solution</h2>
+  <p *ngIf="!is_solvable">No Solution</p>
+  <!-- If best solution is X pivot render -->
+  <div *ngIf="display_best === 'X' && is_solvable">
+    <table>
+      <tr>
+        <th>Jug X</th>
+        <th>Jug Y</th>
+        <th>Explanation</th>
+      </tr>
+      <tr *ngFor="let movements of movementsX; let i=index;">
+        <td>{{movements.x_value}}</td>
+        <td>{{movements.y_value}}</td>
+        <td>{{movements.movement}}</td>
+      </tr>
+    </table>
+  </div>
+  <!-- If best solution is Y pivot render -->
+  <div *ngIf="display_best === 'Y' && is_solvable">
+    <table>
+      <tr>
+        <th>Jug X</th>
+        <th>Jug Y</th>
+        <th>Explanation</th>
+      </tr>
+      <tr *ngFor="let movements of movementsY; let i=index;">
+        <td>{{movements.x_value}}</td>
+        <td>{{movements.y_value}}</td>
+        <td>{{movements.movement}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- Snackbar -->
+<div id="snackbar" #snackbar>{{snack_message}}</div>
