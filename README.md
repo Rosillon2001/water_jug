@@ -29,7 +29,7 @@ If other version is in use, run:
 nvm use 18.16.1
 ```
 
-# Project Setup
+## Project Setup
 
 Once the repository is cloned, navigate/locate into the root folder and install the project dependencies using this command:
 
@@ -37,7 +37,7 @@ Once the repository is cloned, navigate/locate into the root folder and install 
 npm install
 ```
 
-# Open Project/Development Server
+## Open Project/Development Server
 
 For deploying the project locally, you must run Angular dev server, use the following command to do so:
 ```
