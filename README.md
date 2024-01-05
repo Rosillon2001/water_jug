@@ -70,15 +70,15 @@ Both results are compared based in the quantity of movements, and the most effic
 
 ## Test Cases
 1.- x=5 y=3 z=2 <br>
-  case1(x;y): (5;0), (2;3) ----> Solved in 2 movements. Best Solution, using x as pivot/first to fill.
+  case1(x;y): (5;0), (2;3) ----> Solved in 2 movements. Best Solution, using x as pivot/first to fill.<br>
   case2(x;y): (0;3), (3;0), (3;3), (5;1), (0;1), (1;0), (1;3), (4;0), (4;3), (5;2) ----> Solved in 10 movements. Worst solution, using y as pivot/first to fill.
 
 2.- x=3 y=5 z=4 <br>
-  case1(x;y): (3;0), (0;3), (3;3), (1;5), (1;0), (0;1), (3;1), (0;4) ---> Solved in 8 movements. Worst Solution.
+  case1(x;y): (3;0), (0;3), (3;3), (1;5), (1;0), (0;1), (3;1), (0;4) ---> Solved in 8 movements. Worst Solution.<br>
   case2(x;y): (0;5), (3;2), (0;2), (2;0), (2;5), (3;4) ---> Solved in 6 movements. Best Solution.
 
 3.- x=21 y=14 z=7 <br>
-  case1(x;y): (21;0), (14;7) ---> Solved in 2 movements. Best Solution.
+  case1(x;y): (21;0), (14;7) ---> Solved in 2 movements. Best Solution.<br>
   case2(x;y): (0;14), (14;0), (14;14), (21;7) ---> Solved in 4 movements. Worst Solution.
 
 4.- x=88 y=56 z=3 <br>
