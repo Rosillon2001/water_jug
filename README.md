@@ -31,7 +31,7 @@ nvm use 18.16.1
 
 # Project Setup
 
-Once the repo is cloned, navigate/locate into the root folder and install the project dependencies using this command:
+Once the repository is cloned, navigate/locate into the root folder and install the project dependencies using this command:
 
 ```
 npm install
@@ -49,7 +49,9 @@ ng serve -o
 ```
 
 <br>
+
 ---
+
 <br>
 
 ## Development server
