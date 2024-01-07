@@ -8,7 +8,9 @@ This project was made using NodeJs (v^18.16.1), needed to run this project. You 
 
 ## Installing NVM (In case you don't have it yet)
 
-For installing NVM, download the [ZIP](https://github.com/coreybutler/nvm-windows), unzip and run the executable.
+For installing NVM on Windows, download the [ZIP](https://github.com/coreybutler/nvm-windows), unzip and run the executable.
+
+For Linux or MacOs go to the [NVM Repo](https://github.com/nvm-sh/nvm) and follow the installation instructions in the README file.
 
 ## Node Version Management
 
