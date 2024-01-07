@@ -31,6 +31,7 @@ export class WaterJugsComponent implements OnInit{
   // Jugs values
   actual_jugX: number = 0;
   actual_jugY: number = 0;
+
   // Snackbar
   @ViewChild('snackbar') snackbar: ElementRef = new ElementRef(null);
   snack_message: string = 'Please fill all the fields';
