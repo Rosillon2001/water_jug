@@ -31,10 +31,11 @@
     <button type="button" (click)="calculate()" [disabled]="!validateForm()">Calculate</button>
   </form>
 </div>
+<!-- -------------------------- Solution container ------------------------------------------ -->
 <div>
   <h2>Solution</h2>
   <p *ngIf="!is_solvable">No Solution</p>
-  <!-- If best solution is X pivot render -->
+  <!-- If best solution is X pivot, render -->
   <div *ngIf="display_best === 'X' && is_solvable">
     <table>
       <tr>
@@ -49,7 +50,7 @@
       </tr>
     </table>
   </div>
-  <!-- If best solution is Y pivot render -->
+  <!-- If best solution is Y pivot, render -->
   <div *ngIf="display_best === 'Y' && is_solvable">
     <table>
       <tr>
